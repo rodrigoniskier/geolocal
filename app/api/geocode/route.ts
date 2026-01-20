@@ -77,8 +77,7 @@ export async function GET() {
       })
     ]
 
-    const csvOut = linhas.join('
-')
+    const csvOut = linhas.join('\n')
 
     return new NextResponse(csvOut, {
       status: 200,
