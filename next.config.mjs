@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'standalone', // Para Vercel serverless
+  trailingSlash: true,
+  generateEtags: false,
+  // Desabilita static export para APIs
   experimental: {
-    serverActions: {
-      bodySizeLimit: '2mb'
-    }
+    serverComponentsExternalPackages: ['papaparse']
   }
 }
 
