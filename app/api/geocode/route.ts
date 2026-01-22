@@ -3,6 +3,9 @@ import fs from 'node:fs'
 import path from 'node:path'
 import Papa from 'papaparse'
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
 type LocalRow = {
   Local: string
 }
